@@ -1,7 +1,9 @@
-function onMenuClick() {
-    let navbar = document.getElementById("navbar");
-    navbar.classList.toggle("responsive");
-}
+document.addEventListener("DOMContentLoaded", function () {
+    function onMenuClick() {
+        let navbar = document.getElementById("navbar");
+        navbar.classList.toggle("show");
+    }
+});
 
 function isInViewport(element) {
     let rect = element.getBoundingClientRect();
