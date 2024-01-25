@@ -11,6 +11,7 @@
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/media-queries.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com"> 
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -22,34 +23,44 @@
 		<!-- HEADER -->
 
 		<header>
-			<div class="left-header">
-			  <a href="index.html">Ejoke Ekpagha</a>
-			</div>
-			<a id="menu-icon" class="menu-icon" onclick="onMenuClick()">
-				<span class="sr-only">Toggle Navigation</span>
-				<div class="menu-line"></div>
-				<div class="menu-line"></div>
-				<div class="menu-line"></div>
-			</a>
+			<div class="left-header">Ejoke Ekpagha</div>
+			<div class="menu-bar">Menu</div>
 			<nav class="right-header">
-			  <ul id="navbar">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About me</a></li>
-				<li><a href="projects.html">Portfolio</a></li>
-				<li><a href="contact.html">Contact me</a></li>
-			  </ul>
+			  	<ul id="navbar">
+					<li>
+						<a href="index.html" class="active">Home</a>
+					</li>
+					<li>
+						<a href="#about">About me</a>
+					</li>
+					<li>
+						<a href="#portfolio">Portfolio</a>
+					</li>
+					<li>
+						<a href="#contact">Contact me</a>
+					</li>
+			  	</ul>
 			</nav>
 		</header>
-		
+
 		<!-- INTRO SECTION -->
+
 		<section class="intro-section">
-		  <div class="intro-content">
-			<h1>Hello, <br>I'm Ejoke Ekpagha.</h1>
-			<p>Mobile + Web innovator</p>
-		  </div>
+			<div class="intro-content">
+				<div class="profile-container">
+					<div class="profile-image"></div>
+				</div>
+				<div class="text-content">
+					<h1>Hello, <br>I'm Ejoke Ekpagha.</h1>
+					<p>Mobile + Web innovator</p>
+					<div class="btn-container">
+						<a href="#" class="btn">Explore CV</a>
+					</div>
+				</div>
+			</div>
 		</section>
 		
-		<!-- OFFER SECTION -->
+		<!--OFFER SECTION-->
 		<section class="offer-section" id="offer-section">
 		  <div class="offer-content">
 			<h2>What I offer</h2>
@@ -57,7 +68,8 @@
 		  </div>
 		</section>
 		
-		<!-- PECULIAR SECTION -->
+		<!--PECULIAR SECTION-->
+
 		<section class="peculiar-section">
 		  <div class="peculiar-item">
 			<img src="javascript-4523100_1280.jpg" alt="Image 1">
@@ -77,9 +89,9 @@
 		  </div>
 		</section>
 
-		<!-- PORTFOLIO SECTION -->
-
-		<section class="portfolio-section">
+		
+		<!--PORTFOLIO SECTION-->
+		<section id="portfolio" class="portfolio-section">
 			<div class="portfolio-header">
 			  <h2>Coding Portfolio</h2>
 			  <p>My work is done with the utmost attention to detail and is focused on beautiful, functional, and user-friendly final results. Check out a few samples of my latest work below and discover what I can do for you today.</p>
@@ -101,11 +113,73 @@
 				<p>Description for Project 3</p>
 			  </div>
 			</div>
-		  </section>
-		
-		  <!-- FOOTER -->
+		</section>
 
-		<footer class="footer-section">
+		<!--ABOUT SECTION-->
+		  
+		<section id="about">
+
+		 
+
+			<section class="who-i-am-section">
+				<div class="who-i-am-content">
+			  		<h2>Who I Am</h2>
+			  		<p>
+				I’m a creative and talented Web Developer with extensive experience in web development and coding.
+				I am based in Atlanta, Georgia, and specialize in projects that help set my clients apart in a busy marketplace.
+				<br><br>
+				I’ve worked remotely, in-house, and as a freelancer for a wide variety of clients.
+				No matter where I’m working or the type of project currently in development,
+				I pride myself on exceeding my clients’ expectations. Contact me to find out more about my skills and current work availability.
+			  		</p>
+				</div>
+			</section>
+
+		</section>
+
+		
+		<!--CONTACT SECTION-->
+
+		<section id="contact" class="contact-me-section">
+			<div class="contact-info">
+				<h2>Let's Chat</h2>
+	  			<p>Atlanta, Georgia</p>
+	  			<p>ekpagha.e16@gmail.com</p>
+	  			<p>123-456-7890</p>
+			</div>
+			<div class="contact-form">
+	  			<form>
+					<label for="name">Name<sup>*</sup></label>
+					<input type="text" id="name" name="name" placeholder="Enter your name" required>
+  
+					<label for="location">Location<sup>*</sup></label>
+					<input type="text" id="location" name="location" placeholder="Enter your location" required>
+  
+					<div class="form-row">
+						<div class="form-col">
+							<label for="email">Email<sup>*</sup></label>
+							<input type="email" id="email" name="email" placeholder="Enter your email" required>
+						</div>
+		  				<div class="form-col">
+							<label for="phone">Phone</label>
+							<input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+		  				</div>
+					</div>
+
+					<label for="subject">Subject<sup>*</sup></label>
+					<input type="text" id="subject" name="subject" placeholder="Type the subject" required>
+  
+					<label for="message">Message</label>
+					<textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+  
+					<input type="submit" value="Submit">
+	  			</form>
+			</div>
+		</section>
+		
+		<!--FOOTER SECTION--> 
+
+		<footer id="footer" class="footer-section">
 			<div class="footer-content">
 				<h3>Ejoke Ekpagha</h3>
 				<p>ekpagha.e16@gmail.com</p>
@@ -116,6 +190,7 @@
 			  	</div>
 			</div>
 		</footer>
+
 
 		</div>
 

@@ -1,0 +1,323 @@
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+/** MAX WIDTH 1250 **/
+
+
+@media only screen and (max-width: 1250px) {
+    .profile-container {
+        margin-top: 120px;
+    }
+    .profile-image {
+        width: 300px;
+        height: 300px;
+    }
+    .text-content h1 {
+        font-size: 48px;
+    }
+    .text-content p {
+        font-size: 18px;
+    }
+    .btn-container .btn {
+        font-size: 16px;
+    }
+    .offer-content h2 {
+        font-size: 36px;
+    }
+    .offer-content p {
+        font-size: 18px;
+    }
+    .peculiar-item h3 {
+        font-size: 24px;
+    }
+    .first-p {
+        font-size: 18px;
+    }
+    .second-p {
+        font-size: 14px;
+    }
+    .portfolio-header h2 {
+        font-size: 36px;
+    }
+    .portfolio-item h3 {
+        font-size: 22px;
+    }
+    .portfolio-item p {
+        font-size: 18px;
+    }
+    .who-i-am-content h2 {
+        font-size: 36px;
+    }
+    .who-i-am-content p {
+        font-size: 18px;
+    }
+    .contact-info h2 {
+        font-size: 36px;
+    }
+    .contact-info p {
+        font-size: 18px;
+    }
+    #contact {
+        padding: 40px 100px;
+    }
+}
+
+/** MAX WIDTH 1100 **/
+
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 30px;
+    }
+}
+
+/** MAX WIDTH 973 **/
+
+
+@media only screen and (max-width: 973px) {
+    .menu-bar {
+        display: block;
+        cursor: pointer;
+        background-color: white;
+        color: rgb(12, 12, 13);
+        padding: 10px 15px;
+        width: 100px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .right-header {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: rgb(12, 12, 13);
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .right-header.active {
+        height: 300px;
+    }
+    .right-header ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .right-header.active ul {
+        opacity: 1;
+    }
+    .right-header ul li a {
+        margin-bottom: 12px;
+    }
+    .intro-section.active {
+        margin-top: 300px;
+    }
+    .intro-section {
+        transition: margin-top 0.5s ease;
+        height: 50vh;
+    }
+    .profile-image {
+        width: 250px;
+        height: 250px;
+    }
+    .profile-container {
+        margin-top: 70px;
+    }
+    .text-content {
+        margin-top: 20px;
+    }
+    .text-content h1 {
+        font-size: 32px;
+    }
+    .text-content p {
+        font-size: 16px;
+    }
+    .btn-container .btn {
+        font-size: 14px;
+    }
+    .offer-section {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .offer-content h2 {
+        font-size: 28px;
+    }
+    .offer-content p {
+        font-size: 16px;
+    }
+    .peculiar-item {
+        flex: 0 0 100%;
+    }
+
+    .peculiar-item h3 {
+        font-size: 22px;
+    }
+
+    .first-p {
+        font-size: 18px;
+    }
+
+    .second-p {
+        font-size: 15px;
+    }
+    .peculiar-item:nth-child(3) {
+        order: 2;
+    }
+    .peculiar-item:nth-child(4) {
+        order: 1;
+    }
+    .portfolio-header h2 {
+        font-size: 28px;
+    }
+    .portfolio-header p {
+        font-size: 16px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+    .portfolio-item h3 {
+        font-size: 20px;
+    }
+    .portfolio-item p {
+        font-size: 13px;
+    }
+    .portfolio-item {
+        flex: 0 0 calc(100% - 20px);
+        margin: 0 10px;
+        margin-bottom: 20px;
+    }
+    .who-i-am-content h2 {
+        font-size: 28px;
+    }
+    .who-i-am-content p {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    .who-i-am-section {
+        padding: 20px 70px;
+    }
+    #contact {
+        padding: 20px 70px;
+    }
+    .contact-info h2 {
+        font-size: 28px;
+    }
+    .contact-info p {
+        font-size: 16px;
+    }
+}
+
+/** MAX WIDTH 600 **/
+
+
+@media only screen and (max-width: 600px) {
+    .intro-section {
+        height: 35vh;
+    }
+    .intro-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 100px;
+    }
+    .profile-container {
+        padding-top: 20px;
+    }
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+    .text-content {
+        padding: 0;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+    .text-content h1 {
+        font-size: 26px;
+    }
+    .text-content p {
+        font-size: 14px;
+    }
+    .btn-container {
+        margin: 30px auto;
+        width: 50%;
+    }
+    .btn-container .btn {
+        font-size: 12px;
+    }
+    .offer-content h2 {
+        font-size: 24px;
+    }
+    .offer-content p {
+        font-size: 14px;
+    }
+    .offer-section {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .peculiar-item {
+        flex: 0 0 100%;
+    }
+    .peculiar-item h3 {
+        font-size: 20px;
+    }
+    .first-p {
+        font-size: 16px;
+    }
+    .second-p {
+        font-size: 13px;
+    }
+    .peculiar-item:nth-child(3) {
+        order: 2;
+    }
+    .peculiar-item:nth-child(4) {
+        order: 1;
+    }
+    .portfolio-header h2 {
+        font-size: 24px;
+    }
+    .portfolio-header p {
+        font-size: 14px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+    .portfolio-item h3 {
+        font-size: 20px;
+    }
+    .portfolio-item p {
+        font-size: 13px;
+    }
+    .portfolio-item {
+        flex: 0 0 calc(100% - 20px);
+        margin: 0 10px;
+        margin-bottom: 20px;
+    }
+    .who-i-am-content h2 {
+        font-size: 24px;
+    }
+    .who-i-am-content p {
+        font-size: 14px;
+        margin-top: 30px;
+    }
+    .who-i-am-section {
+        padding: 15px 50px;
+    }
+    #contact {
+        padding: 15px 50px;
+    }
+    .contact-info h2 {
+        font-size: 24px;
+    }
+    .contact-info p {
+        font-size: 14px;
+    }
+}
